@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('product');
 });
 
+router.get('/create', function(req, res, next) {
+  res.render('products/product-form');
+});
+
 module.exports = router;

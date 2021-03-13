@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head') %> 
+  <body>
+    <%- include('../partials/navbar') %> 
+    
+    <!-- Main -->
+    <main id="main">
+
+      <div class="container">
+            <div id="product-form-box">
+              <form action="">
+                <div class="left">
+                  <h1>Product Register</h1>
+
+                  <div>              
+                    <label for="">Product name</label>
+                    <input type="text" name="text" placeholder="Product name" />
+
+                    <label for="">Product Image</label>
+                    <input type="file" name="image-product"/>
+
+                    <label for="">Category</label>
+                    <select name="" id="">
+                      <option value="1">New Products</option>
+                    </select>
+
+                    <label for="">Type product</label>
+                    <select name="" id="">
+                      <option value="1">Cerveza</option>
+                    </select>
+
+                    <label for="">Voulmen</label>
+                    <select name="" id="">
+                      <option value="1">375cc</option>
+                      <option value="1">750cc</option>
+                      <option value="1">1L</option>
+                    </select>
+
+                    <label for="">Price</label>
+                    <input type="text" name="text" placeholder="Price" />
+
+                    <label for="">Discount</label>
+                    <input type="text" name="text" placeholder="Last name" />
+
+                    <label for="">Description</label>
+                    <textarea name="" id="" cols="30" rows="4"></textarea>
+                  </div>
+                </div>
+
+                <input type="submit" value="Register product">
+              </form>
+              
+            </div>
+
+            <div id="product-form-box">
+              <form action="">
+                <div class="left">
+                  <h1>Product Register</h1>
+
+                  <div>              
+                    <label for="">Product name</label>
+                    <input type="text" name="text" placeholder="Product name" />
+
+                    <label for="">Product Image</label>
+                    <input type="file" name="image-product"/>
+
+                    <label for="">Category</label>
+                    <select name="" id="">
+                      <option value="1">New Products</option>
+                    </select>
+
+                    <label for="">Type product</label>
+                    <select name="" id="">
+                      <option value="1">Cerveza</option>
+                    </select>
+
+                    <label for="">Voulmen</label>
+                    <select name="" id="">
+                      <option value="1">375cc</option>
+                      <option value="1">750cc</option>
+                      <option value="1">1L</option>
+                    </select>
+
+                    <label for="">Price</label>
+                    <input type="text" name="text" placeholder="Price" />
+
+                    <label for="">Discount</label>
+                    <input type="text" name="text" placeholder="Last name" />
+
+                    <label for="">Description</label>
+                    <textarea name="" id="" cols="30" rows="4"></textarea>
+                  </div>
+                </div>
+
+                <input class="update" type="submit" value="Update product">
+                <input class="delete" type="submit" value="Delete product">
+              </form>
+              
+            </div>
+      </div>
+      
+      <%- include('../partials/sections/facility_section') %>  
+     
+    </main>
+    <!-- End Main -->
+
+    <%- include('../partials/sections/newsletter_section') %> 
+    <%- include('../partials/footer') %>
+
+    <!-- Go To -->
+    <a href="#header" class="goto-top scroll-link">
+      <svg>
+        <use xlink:href="./images/sprite.svg#icon-arrow-up"></use>
+      </svg>
+    </a>
+    <!-- End Go To -->
+
+    <!-- Glide Carousel Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+    <!-- Animate On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/javascripts/products.js"></script>
+    <script src="/javascripts/index.js"></script>
+    <script src="/javascripts/slider.js"></script>
+  </body>
+</html>

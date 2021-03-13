@@ -2616,7 +2616,7 @@ Login
   text-align: center;
 }
 
-#login-box > .right > input[type="submit"] {
+#login-box > .right > a > input[type="submit"] {
   width: 100%;
   height: 35px;
   background: #16a085;
@@ -2950,3 +2950,161 @@ Register Media Query
   
 }
 
+
+/*
+======================
+Product form
+======================
+*/
+
+#product-form-box {
+  margin: 5% auto;
+  width: 600px;
+  height: auto;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+#product-form-box  .left {
+  padding: 40px;
+  
+}
+
+#product-form-box  form{
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+#product-form-box  .left  div{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#product-form-box  .left > a{
+  color: #212529;
+}
+
+#product-form-box  .left a:visited{
+  color: #212529;
+}
+
+#product-form-box  .left > h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+#product-form-box  .left  input[type="text"],
+#product-form-box  .left  input[type="password"],
+#product-form-box  .left  input[type="file"],
+#product-form-box  .left  input[type="email"],
+#product-form-box  .left select{
+  display: block;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 100%;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+#product-form-box  .left textarea{
+  display: block;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+#product-form-box  .left > input[type="text"]:focus,
+#product-form-box  .left > input[type="password"]:focus,
+#product-form-box  .left > input[type="file"]:focus,
+#product-form-box  .left > input[type="email"]:focus{
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+#product-form-box form input[type="submit"] {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  background: #16a085;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+#product-form-box form input[type="submit"].update {
+  background-color: #59b210;
+}
+
+#product-form-box form input[type="submit"].delete {
+  background-color: #eb0028;
+}
+
+#product-form-box form input[type="submit"]:hover,
+#product-form-box form input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+#product-form-box form input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+/*
+======================
+Product-form Media Query
+======================
+*/
+
+@media only screen and (max-width: 640px){
+  #product-form-box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+  }
+
+  #product-form-box .left{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  #product-form-box> .left > input[type="submit"] {
+    margin-top: 25px;
+    width: 100%;
+    height: 32px;
+    background: #16a085;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: 500;
+    transition: 0.1s ease;
+    cursor: pointer;
+  }  
+}
